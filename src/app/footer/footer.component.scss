@@ -3,19 +3,22 @@
   color: $base-white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   height: 45vh;
+  background-size: inherit;
   @media (min-width: 814px) {
     height: 55vh;
+    background-size: cover;
   }
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
+
   background-image: url("/assets/baby.jpg");
-  background-size: cover;
-  background-position-y: top;
+  background-position-x: center;
+  background-position-y: 50vh;
   font-size: 350%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-attachment: fixed;
+
   h3 {
     display: flex;
     margin-top: 5%;
