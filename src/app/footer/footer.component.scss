@@ -1,0 +1,30 @@
+@import "../../assets/colors.scss";
+.app_footer {
+  color: $base-white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  height: 45vh;
+  @media (min-width: 814px) {
+    height: 55vh;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  background-image: url("/assets/baby.jpg");
+  background-size: cover;
+  background-position-y: top;
+  font-size: 350%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    display: flex;
+    margin-top: 5%;
+    @media (min-width: 814px) {
+      margin-top: 3%;
+      font-size: 8rem;
+    }
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+}

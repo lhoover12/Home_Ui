@@ -1,0 +1,57 @@
+@import "../../assets/colors.scss";
+
+.title_wrapper {
+  width: 100%;
+  height: 95vw;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 50%,
+      rgb(255, 255, 255) 95%
+    ),
+    url("/assets/t_home.jpeg");
+  margin-bottom: -10%;
+}
+.title_header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 350%;
+  h1 {
+    @media (min-width: 814px) {
+      margin-top: 20%;
+      font-size: 8rem;
+    }
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+  h2 {
+    margin-top: 5px;
+    display: flex;
+    font-size: 1.5rem;
+  }
+}
+.title_version {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home_spacer {
+  color: $highlight-1;
+  width: 50%;
+  max-width: 50rem;
+}
+.home_tiny_spacer {
+  color: $base-grey;
+  width: 5%;
+}

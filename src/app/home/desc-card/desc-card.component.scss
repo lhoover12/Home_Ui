@@ -1,0 +1,31 @@
+.big_card {
+  min-height: 45vw;
+  max-width: 48rem;
+  padding: 2rem;
+  margin: auto;
+}
+.big_card_image {
+  height: inherit;
+}
+.mot {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0) 10%,
+      rgb(255, 255, 255) 95%
+    ),
+    url("/assets/1_land_home.jpeg");
+}
+.learn_button {
+  height: 40px;
+  width: 200px;
+  margin: 20px;
+  margin-top: 70px;
+  text-align: center;
+}
+.button_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
