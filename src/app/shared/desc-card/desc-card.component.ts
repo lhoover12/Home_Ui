@@ -1,4 +1,5 @@
-import { Car } from "./../car";
+import { Car } from "./car";
+import { Img } from "./img";
 import {
   Component,
   OnInit,
@@ -13,7 +14,6 @@ import {
   animate,
   transition
 } from "@angular/animations";
-import { from } from "rxjs";
 
 @Component({
   selector: "app-desc-card",
@@ -44,8 +44,10 @@ import { from } from "rxjs";
 export class DescCardComponent implements OnInit {
   state = "hide";
   constructor(public el: ElementRef) {}
-
+  href: string;
   @Input("card") card: Car;
+
+  @Input("img") img: Img;
 
   @HostListener("window:scroll", ["$event"])
   checkScroll() {
@@ -53,7 +55,7 @@ export class DescCardComponent implements OnInit {
       const componentPosition =
         this.el.nativeElement.offsetTop -
         this.el.nativeElement.offsetHeight -
-        200;
+        0;
       const scrollPosition = window.pageYOffset;
       if (scrollPosition >= componentPosition) {
         this.state = "show";
@@ -61,7 +63,5 @@ export class DescCardComponent implements OnInit {
     }
   }
 
-  ngOnInit() {
-    console.log("card", this);
-  }
+  ngOnInit() {}
 }

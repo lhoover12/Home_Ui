@@ -1,33 +1,17 @@
 @import "../../assets/colors.scss";
 .app_footer {
-  color: $base-white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  height: 45vh;
-  background-size: inherit;
-  @media (min-width: 814px) {
-    height: 55vh;
-    background-size: cover;
-  }
-  background-repeat: no-repeat;
-
-  background-image: url("/assets/baby.jpg");
-  background-position-x: center;
-  background-position-y: 50vh;
-  font-size: 350%;
+  margin-top: 20vh;
+  height: 20vh;
+  background: linear-gradient(to right, #f96039, #765578);
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  background-attachment: fixed;
-
-  h3 {
-    display: flex;
-    margin-top: 5%;
-    @media (min-width: 814px) {
-      margin-top: 3%;
-      font-size: 8rem;
-    }
-    display: flex;
-    font-size: 3rem;
-    margin-bottom: 5px;
-  }
+  justify-content: center;
+}
+.footer_heart {
+  width: 100px;
+  height: 100px;
+  background-image: url("/assets/heart.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }

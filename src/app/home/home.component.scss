@@ -46,6 +46,34 @@
   align-items: center;
 }
 
+.title_circle {
+  border-radius: 50%;
+  background: linear-gradient(#5f1644, #f96039);
+  width: 10em;
+  height: 5em;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  margin: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  box-shadow: 1px 15px 15px #a6a6a6;
+  padding: 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin: 50px;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  h3 {
+    margin: 5px;
+  }
+}
+
 .home_spacer {
   color: $highlight-1;
   width: 50%;

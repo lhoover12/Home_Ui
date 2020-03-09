@@ -1,0 +1,23 @@
+<div class="app-base" [@scrollAnimation]="state">
+  <div>
+    <h2>{{ card.Title }}</h2>
+  </div>
+
+  <div>
+    <p class="p_desc">{{ card.Desc }}</p>
+  </div>
+
+  <div *ngIf="card.link" class="button_wrapper">
+    <button
+      [routerLink]="[card.link]"
+      class="learn_button"
+      mat-raised-button
+      color="primary"
+    >
+      Learn More
+    </button>
+  </div>
+  <div *ngIf="img" class="img_container">
+    <a [href]="img.link"><img [src]="img.src" [alt]="img.alt"/></a>
+  </div>
+</div>
