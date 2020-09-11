@@ -11,13 +11,14 @@ import { MatButtonModule } from "@angular/material/button";
 import { ToolsComponent } from "./tools/tools.component";
 import { AboutMeComponent } from "./about-me/about-me.component";
 import { SiteComponent } from "./site/site.component";
+import { StickybitsDirective } from "@shared/derrectives/sticky-derective";
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     DescCardComponent,
     HomeComponent,
-
+    StickybitsDirective,
     ToolsComponent,
     AboutMeComponent,
     SiteComponent

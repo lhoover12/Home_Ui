@@ -26,12 +26,12 @@ export class SiteComponent implements OnInit {
 
   public Travis = new Img(<ImgOptions>{
     link: "https://about.travis-ci.com/",
-    src: "/assets/TravisCI-Full-Color.png",
+    src: "./assets/TravisCI-Full-Color.png",
     alt: "Powered Travis CI"
   });
   public Angular = new Img(<ImgOptions>{
     link: "https://angular.io/",
-    src: "/assets/angular.png",
+    src: "./assets/angular.png",
     alt: "Powered by the Angular Framework"
   });
 

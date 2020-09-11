@@ -1,7 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Injectable, Inject } from "@angular/core";
 import { Car, CardOptions } from "@shared/desc-card/car";
 import { Button } from "protractor";
+import { DOCUMENT } from "@angular/common";
 
+@Injectable({
+  providedIn: "root"
+})
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
@@ -23,7 +27,7 @@ export class HomeComponent implements OnInit {
     Desc:
       "I have worked with a wide range of tools and languages over the past few years."
   });
-  constructor() {}
+  constructor(@Inject(DOCUMENT) private readonly document: Document) {}
 
   ngOnInit() {}
 }
